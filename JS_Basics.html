@@ -1,0 +1,55 @@
+<script>
+newFunction();
+
+function newFunction() {
+    var x = [1, 2, 3];
+    var y = x;
+    x.push('Hello world!');
+    console.log(x);
+    console.log(y);
+}
+
+function sayName(name){
+    console.log("Hello my name is " + name);
+};
+sayName('Morty');
+
+
+Basic 1
+var x = []
+x.push('coding','dojo','rocks')
+console.log(x);
+x.pop()
+console.log(x);
+
+Basic 2
+const y = [];
+y.push(88);
+console.log(y);
+a constant cannot be changed
+
+var z = [9, 10, 6, 5, -1, 20, 13, 2];
+for (var i = 0; i < z.length; i++){
+    console.log(z[i]);
+}
+
+for (var i = 0; i < z.length-1; i++){
+    console.log(z[i]);
+}
+
+names = ['Kadie', 'Joe', 'Fritz', 'Pierre', 'Alphonso']
+for (var i = 0; i < names.length; i++){
+    console.log(names[i].length);
+}
+
+for (var i = 0; i < names.length; i++){
+    if (names[i].length == 5){
+        console.log(names[i]);
+    }
+}
+
+
+function yell(string){
+    console.log(string.toUpperCase())
+}
+</script>

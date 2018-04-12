@@ -1,0 +1,39 @@
+<html>
+<body>
+    <h1>Students</h1>
+    <ul id="main">
+      
+    </ul>
+    <h1> Super append</h1>
+    <section id="super">
+
+    </section>
+<script>
+    function appendList(array, id){
+        for (var i = 0; i < array.length; i++){
+            var new_item = document.createElement("li");
+            new_item.innerHTML = array[i];
+            document.getElementById(id).appendChild(new_item);
+        }
+    };
+    let students = ["Jeff", "Jenny", "Javier", "Joslyn", "Joe", "Jane", "Django"];
+    let target_id = "main";
+    appendList(students, target_id);
+    // appendList takes an array of strings and the id of a <ul> element,
+    // and appends all elements of the array as <li> tags
+    function super_appendList(array, element, id){
+        for (var i = 0; i < array.length; i++){
+            var new_item = document.createElement(element);
+            new_item.innerHTML = array[i];
+            document.getElementById(id).appendChild(new_item);
+        }
+    };
+    let arr = ["Hello", "my", "name", "is", "Mike"];
+    let t_id = "super";
+    let elem = "p"
+    super_appendList(arr, elem, t_id);
+    // super_appendList takes the type of element we want our
+    // array to be appended as
+</script>
+</body>
+</html>
